@@ -1,0 +1,16 @@
+<html>
+<head>
+   <%= javascript_include_tag :all %>
+    <b><%= stylesheet_link_tag 'layout' %></b>
+    <b><%= image_tag 'pencils.jpg',:width=>"180px" ,:height=>"180px" %></b>
+ </head>
+
+  <body>
+   <div id="content">
+     <p><%= render :partial => "users/login" %></p>
+
+     <%= yield %>
+   </div>
+ </body>
+ 
+ </html>
